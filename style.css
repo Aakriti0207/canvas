@@ -1,0 +1,43 @@
+#canvas-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 80%;
+    max-width: 600px;
+    background-color: darkgrey;
+    border: 4px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    margin: auto;
+    transition: all 0.3s ease-in-out;
+}
+canvas{
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+h1{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin-left: 0px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #222; /* Dark mode vibes */
+}
+input[type = "file"] {
+    padding: 10px;
+    border-radius: 10px;
+    background: #222;
+    color: darkgrey;
+    cursor: pointer;
+    border: none;
+          
+}
