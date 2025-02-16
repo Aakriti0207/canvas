@@ -18,10 +18,8 @@ const ScrapbookCanvas = () => {
           selection: true,
         });
 
-        CanvasInstance.current.setBackgroundColor(
-          "#ffffff",
-          CanvasInstance.current.renderAll.bind(CanvasInstance.current)
-        );
+        CanvasInstance.current.setBackgroundColor("#ffffff",CanvasInstance.current.renderAll.bind(CanvasInstance.current));
+        CanvasInstance.renderAll();
       }
     });
 
@@ -60,7 +58,8 @@ const ScrapbookCanvas = () => {
           });
 
           CanvasInstance.current.add(img);
-          CanvasInstance.current.renderAll(); // ✅ Ensures the image is displayed
+          CanvasInstance.current.renderAll();
+          CanvasInstance.current.bringToFront(img); // ✅ Ensures the image is displayed
 
           setUploadedImages((prev) => [...prev, e.target.result]);
         });
